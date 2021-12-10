@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+ <channel>
+	<item>
+		<title>Stanovi</title>
+		<description>Ovde mozete videti stanove</description>
+		<link>https://central-pancevo.netlify.app/assets/stanovi.html</link>
+	</item>
+	<item>
+		<title>Ponuda</title>
+		<description>Ovde vidite ponudu</description>
+		<link>https://central-pancevo.netlify.app/assets/ponuda.html</link>
+	</item>
+ </channel>
+ </rss> 
