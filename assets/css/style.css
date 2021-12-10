@@ -122,6 +122,9 @@ header nav ul li a {
 }
 
 /* Main img */
+.section-main-img .main-img {
+  animation: slideTop 0.7s ease-in;
+}
 
 /* section 2 */
 .section-2 .container {
@@ -327,6 +330,10 @@ header nav ul li a {
 }
 
 /* Lokacija.html */
+.section-1-lokacija .section-1-lokacija-img {
+  animation: slideTop 0.7s ease-in;
+}
+
 .section-2-lokacija .container {
   padding: 40px 0;
   display: flex;
@@ -373,6 +380,7 @@ header nav ul li a {
   justify-content: center;
   align-items: center;
   gap: 30px;
+  animation: opacityAnimation 2s ease;
 }
 
 .section-1-kontakt .container .forma h1 {
@@ -420,6 +428,7 @@ header nav ul li a {
   justify-self: flex-end;
   text-align: right;
   border-bottom: 2px solid var(--secondary-color);
+  animation: slideLeft 0.9s ease-out;
 }
 
 .section-1-ponuda .section-1-ponuda-stan-levo img {
@@ -436,6 +445,7 @@ header nav ul li a {
   justify-self: flex-start;
   text-align: left;
   border-bottom: 2px solid var(--secondary-color);
+  animation: slideRight 0.9s ease-out;
 }
 
 /* Autor.html */
@@ -446,8 +456,13 @@ header nav ul li a {
   width: 60%;
 }
 
+.section-1-autor .container .text {
+  animation: slideLeft 0.9s ease;
+}
+
 .section-1-autor .slika {
   width: 80%;
+  animation: slideRight 0.9s ease;
 }
 
 /* Footer */
@@ -463,4 +478,45 @@ footer .container {
   align-items: center;
   justify-content: space-between;
   color: #fff;
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(450px);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-300px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(300px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes opacityAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
