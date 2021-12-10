@@ -417,6 +417,11 @@ header nav ul li a {
   width: 60%;
 }
 
+.section-1-ponuda h4 {
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .section-1-ponuda .section-1-ponuda-stan-levo.last,
 .section-1-ponuda .section-1-ponuda-stan-desno.last {
   border: none;
